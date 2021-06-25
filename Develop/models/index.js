@@ -1,17 +1,17 @@
-//importing models
-const Users = require('./Users');
-const Blogs = require('./Blogs');
+const User = require('./User');
+const Post = require('./Post');
+const Comment = require('./Comment');
 
-//Blogs belongs to Users
-Blogs.belongsTo(Users, {
-    foreignKey: 'Users_id',
-    onDelete: 'CASCADE',
+Post.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
 });
-//Users can have many Blogs
-Users.hasMany(Blogs, {
-    foreignKey: 'Blogs_id',
+Post.hasMany(Comment, {
+  foreignKey: 'postId',
+  onDelete: 'CASCADE'
 });
-module.exports = {
-    Blogs,
-    Users,
-};
+Comment.belongsTo(User, {
+  foreignKey: 'userId',
+  onDelete: 'CASCADE'
+});
+module.exports = { User, Comment, Post };

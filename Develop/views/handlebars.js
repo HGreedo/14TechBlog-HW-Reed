@@ -1,1 +1,0 @@
-const Handlebars = require("handlebars");

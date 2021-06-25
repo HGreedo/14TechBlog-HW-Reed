@@ -1,28 +1,34 @@
 {
-  "name": "module-13-challenge-orm",
+  "name": "14mvc-homework",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "watch": "nodemon server.js",
-    "seed": "node seeds/index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/HGreedo/14TechBlog-HW-Reed.git"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "SQL",
+    "Express",
+    "Nodejs",
+    "MySequelized"
+  ],
+  "author": "Harrison Reed",
   "license": "ISC",
   "devDependencies": {
     "nodemon": "^2.0.3"
   },
   "dependencies": {
     "dotenv": "^8.2.0",
+    "bcrypt": "^4.0.1",
     "express": "^4.17.1",
+    "connect-session-sequelize": "^6.1.1",
     "handlebars": "^4.7.7",
+    "express-handlebars": "^3.1.0",
+    "express-session": "^1.17.0",
     "mysql2": "^2.1.0",
     "sequelize": "^5.21.7"
   }

@@ -1,0 +1,20 @@
+<div class="post card">
+  <div class="card-header">
+    <h2> Would You Like to Edit Your Post?</h2>
+  </div>
+  <form id="edit-post-form" class="card-body">
+    <input type="hidden" name="post-id" value="{{post.id}}" />
+
+    <label class="form-label" for="post-title">What would you like your new Title to be?</label>
+    <input type="text" name="post-title" value="{{post.title}}" class="form-input" />
+
+    <label class="form-label" for="post-body">How would you like to change your post?</label>
+    <textarea name="post-body" class="form-input">{{post.body}}</textarea>
+
+    <button type="submit" class="btn">Please Update My Post!</button>
+
+    <button type="button" id="delete-btn" class="btn">Delete Post</button>
+  </form>
+</div>
+
+<script src="/js/edit.js"></script>
